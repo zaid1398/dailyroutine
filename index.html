@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily Routine</title>
+    <style>#main{
+        width: 500px;
+        padding: 20px;
+        margin: 200px auto;
+        box-shadow: 0 0 10px black;
+        background-color: pink;
+        border-radius: 25px;
+    } body{
+            background-image: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        }
+        button{
+      border-radius: 15px;
+      background-color: burlywood;
+      padding: 5px;
+      margin: 15px;
+      box-shadow: 0 0 10px black;
+      font-size: 15px;
+  }
+  h2:hover{
+      color:tomato;
+  }
+  h2{
+      text-align: center;
+      font-size:34px ;
+   }
+   #main:hover{
+       background-color: burlywood;
+   }
+   button:hover{
+       font-size: 20px;
+   }
+   #Morning:hover{
+    box-shadow: 0 0 15px;
+   }
+   #evening:hover{
+    box-shadow: 0 0 15px ;
+   }
+   #night:hover{
+       box-shadow: 0 0 15px ;
+   }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 value="Mohammad Zaid!!" id="get">Mohammad Zaid!!</h2>
+        <button onclick="f1()" id="Morning" >Good Morning</button>
+        <button onclick="f2()" id="Evening">Good Evening</button>
+        <button  onclick="f3()" id="Night">Good Night</button>
+    </div>
+    <script>
+        function f1(){
+            var getMn=document.getElementById('get');
+            getMn.innerText="Good Morning Mohammad Zaid!!";
+            }
+        function f2(){
+            var getEvn=document.getElementById('get');
+            getEvn.innerText="Good Evening Mohammad Zaid!!";
+        }
+        function f3(){
+            var getNht=document.getElementById('get');
+            getNht.innerText="Good Night Mohammad Zaid!!";
+        }
+    </script>
+</body>
+</html>
